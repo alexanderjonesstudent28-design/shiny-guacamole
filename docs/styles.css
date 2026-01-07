@@ -1,0 +1,13 @@
+:root{--bg:#0f1720;--card:#111827;--accent:#06b6d4;--muted:#94a3b8;--text:#e6eef6}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg),#071024);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif}
+.site-header{padding:28px 20px;text-align:center}
+.site-header h1{margin:.2rem 0;font-size:1.6rem}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;padding:20px;max-width:980px;margin:0 auto}
+.game-card{display:flex;gap:12px;align-items:center;padding:12px;border-radius:8px;background:var(--card);text-decoration:none;color:inherit;box-shadow:0 6px 18px rgba(2,6,23,.6)}
+.game-card img{width:96px;height:64px;border-radius:6px;object-fit:cover}
+.game-card .meta h2{margin:0;font-size:1.05rem}
+.game-card .meta p{margin:6px 0 0;color:var(--muted);font-size:.9rem}
+.site-footer{text-align:center;padding:18px;color:var(--muted);font-size:.85rem}
+
+@media (max-width:520px){.game-card{flex-direction:column;align-items:flex-start}.game-card img{width:100%;height:120px}}
